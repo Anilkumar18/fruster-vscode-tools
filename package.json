@@ -2,8 +2,8 @@
 	"name": "fruster-vscode-tools",
 	"displayName": "Fruster vscode tools",
 	"description": "Friuster vscode tools",
-	"version": "0.0.1",
-	"publisher": "frostdigital",
+	"version": "0.0.2",
+	"publisher": "Florry",
 	"engines": {
 		"vscode": "^1.22.0"
 	},
@@ -39,7 +39,8 @@
 		"postinstall": "node ./node_modules/vscode/bin/install"
 	},
 	"dependencies": {
-		"fs-extra": "8.1.0"
+		"fs-extra": "8.1.0",
+		"request": "2.88.0"
 	},
 	"devDependencies": {
 		"@types/node": "^8.9.1",
