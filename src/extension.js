@@ -104,9 +104,13 @@ async function getExistingEndpoints(filePath) {
 			}
 		}
 
-		const endpoints = lines.slice(startLine + 3, endLine - 1).filter(line => line !== "" && line !== "\n").map(line => line.split(":")[1].split("\"").join("").split(",").join("").trim());
+		try {
+			const endpoints = lines.slice(startLine + 3, endLine - 1).filter(line => line !== "" && line !== "\n").map(line => line.split(":")[1].split("\"").join("").split(",").join("").trim());
 
-		return endpoints;
+			return endpoints;
+		} catch (err) {
+			throw `Could not parse existing service client. Please delete ${filePath} and try again.`;
+		}
 	} else
 		return [];
 }
