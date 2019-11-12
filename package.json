@@ -1,0 +1,51 @@
+{
+	"name": "fruster-vscode-tools",
+	"displayName": "Fruster vscode tools",
+	"description": "Friuster vscode tools",
+	"version": "0.0.1",
+	"publisher": "frostdigital",
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"icon": "img/icon.png",
+	"homepage": "https://github.com/frostdigital/fruster-vscode-tools/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/frostdigital/fruster-vscode-tools/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/frostdigital/fruster-vscode-tools"
+	},
+	"galleryBanner": {
+		"color": "#007acc"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.fruster.add-service-client"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.fruster.add-service-client",
+				"title": "Fruster: add service client"
+			}
+		],
+		"keybindings": []
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"dependencies": {
+		"fs-extra": "8.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "^8.9.1",
+		"vscode": "^1.1.10"
+	},
+	"__metadata": {
+		"id": "08a573d8-148b-422a-8967-9d79f96c9a11"
+	}
+}
