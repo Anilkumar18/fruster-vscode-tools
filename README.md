@@ -13,6 +13,7 @@ Available commands:
 		The prefix (`ip` in the case above) will be grabbed by the extension and used to access service information.
 
 	- by pressing `ctrl/cmd + shift + p` and selecting `Fruster: add service client` or by binding `extension.fruster.add-service-client` to a key and pressing that key you can bring up the `add service client` menu.
+
 		<img src="img/service-client-1.png"/>
 
 	- The first menu will show all available services for the current project
