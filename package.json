@@ -2,7 +2,7 @@
 	"name": "fruster-vscode-tools",
 	"displayName": "Fruster vscode tools",
 	"description": "Friuster vscode tools",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "Florry",
 	"engines": {
 		"vscode": "^1.22.0"
